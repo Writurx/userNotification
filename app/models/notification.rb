@@ -1,0 +1,6 @@
+class Notification < ApplicationRecord
+  has_and_belongs_to_many :users
+
+  validates :textCode, uniqueness: true
+  validates :textCode, null: false
+end
