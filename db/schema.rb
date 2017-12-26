@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 20171221145736) do
 
   create_table "notifications", force: :cascade do |t|
-    t.boolean "type"
+    t.boolean "sms"
     t.string "textCode"
     t.text "shablon"
     t.datetime "created_at", null: false
